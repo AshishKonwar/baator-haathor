@@ -15,11 +15,11 @@ export default function Player({ playerRef, mobileControls }) {
   const touchStartX = useRef(0);
   const touchStartY = useRef(0);
 
-  playerRef.current.position.x = THREE.MathUtils.clamp(
-  playerRef.current.position.x,
-  -11.3,
-  11.3
-  );
+  // playerRef.current.position.x = THREE.MathUtils.clamp(
+  // playerRef.current.position.x,
+  // -11.3,
+  // 11.3
+  // );
 
   const touchMovement = useRef({
     forward: false,
