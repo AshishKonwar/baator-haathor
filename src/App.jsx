@@ -74,22 +74,6 @@ function App() {
     }, [score]);
 
   const currentQuestion = questions[currentQuestionIndex];
-
-  useEffect(() => {
-    const music = new Audio("/audio/theme.mp3");
-
-    music.loop = true;
-    music.volume = 0.5;
-
-    music.play().catch(() => {
-      console.log("Waiting for user interaction");
-    });
-
-    return () => {
-      music.pause();
-      music.currentTime = 0;
-    };
-  }, [])
   
   if (gameOver) {
   return (
