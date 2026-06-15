@@ -10,13 +10,12 @@ export default function Forest() {
 
     for (let z = 0; z > -3000; z -= 3) {
       for (let x = -180; x < -140; x += 6) {
-pos.push([
-  x + (Math.random() - 0.5) * 2,
-  0,
-  z + (Math.random() - 0.5) * 2
-]);  
-
-}
+        pos.push([
+          x + (Math.random() - 0.5) * 2,
+          0,
+          z + (Math.random() - 0.5) * 2
+        ]);
+      }
 
       for (let x = 140; x < 180; x += 6) {
         pos.push([x, 0, z]);
@@ -50,6 +49,10 @@ pos.push([
 
     trunkRef.current.instanceMatrix.needsUpdate = true;
     leavesRef.current.instanceMatrix.needsUpdate = true;
+
+    // ✅ Fix frustum culling on refs directly
+    trunkRef.current.frustumCulled = false;
+    leavesRef.current.frustumCulled = false;
   }, [positions]);
 
   return (
@@ -58,6 +61,7 @@ pos.push([
         ref={trunkRef}
         args={[null, null, positions.length]}
         castShadow
+        frustumCulled={false}  // ✅ Fix frustum culling via JSX prop
       >
         <cylinderGeometry args={[0.4, 0.5, 4, 6]} />
         <meshStandardMaterial color="#5b3a1e" />
@@ -67,6 +71,7 @@ pos.push([
         ref={leavesRef}
         args={[null, null, positions.length]}
         castShadow
+        frustumCulled={false}  // ✅ Fix frustum culling via JSX prop
       >
         <sphereGeometry args={[2, 8, 8]} />
         <meshStandardMaterial color="#1f6b1f" />

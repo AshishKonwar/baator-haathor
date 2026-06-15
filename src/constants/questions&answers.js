@@ -29,7 +29,7 @@ export const questions = [
   },
   {
     id: "q2",
-    zPosition: -350,
+    zPosition: -270,
     questionImage: "/images/q2.png",
     options: [
       {
@@ -58,7 +58,7 @@ export const questions = [
 
   {
     id: "q3",
-    zPosition: -550,
+    zPosition: -420,
     questionImage: "/images/q3.png",
     options: [
       {
@@ -86,7 +86,7 @@ export const questions = [
   },
   {
   id: "q4",
-  zPosition: -750,
+  zPosition: -570,
   questionText: "পাত আছে ডাল নাই, কথা আছে মাত নাই ?",
   answer: "কিতাপ",
   questionImage: "/images/q4.png",
@@ -116,7 +116,7 @@ export const questions = [
   },
   {
   id: "q5",
-  zPosition: -950,
+  zPosition: -720,
   questionText: "এক ঠেঙীয়া বগলী , নিতৌ নাচে গধূলি ?",
   answer: "নাক",
   questionImage: "/images/q5.jpg",
@@ -146,7 +146,7 @@ export const questions = [
   },
   {
     id: "q6",
-    zPosition: -1150,
+    zPosition: -870,
     questionText: "আগ তিতা গুৰি মৌ, কি কৰিছা ভাবলি বৌ ?",
     answer: "ছাতি",
     questionImage: "/images/q6.png",
@@ -176,7 +176,7 @@ export const questions = [
   },
   {
   id: "q7",
-  zPosition: -1350,
+  zPosition: -1020,
   questionText: "আলিয়ে আলিয়ে যায়, মূৰ দাঙি চায় ?",
   answer: "বেঙ",
   questionImage: "/images/q7.jpg",
@@ -206,7 +206,7 @@ export const questions = [
   },
   {
     id: "q8",
-    zPosition: -1550,
+    zPosition: -1170,
     questionText: "মাত আছে মানুহ নাই, ঘৰ আছে দুৱাৰ নাই/ঘৰ আছে দুৱাৰ নাই, মাত আছে মানুহ নাই ?",
     answer: "ৰেডিঅ'",
     questionImage: "/images/q8.jpg",
@@ -236,7 +236,7 @@ export const questions = [
   },
   {
   id: "q9",
-  zPosition: -1650,
+  zPosition: -1320,
   questionText: "আছিলা গ'লা, গ'লা-আছিলা, আৰু নাহিলা।",
   answer: "দাঁত",
   questionImage: "/images/q9.jpg",
@@ -266,7 +266,7 @@ export const questions = [
 },
 {
   id: "q10",
-  zPosition: -1850,
+  zPosition: -1470,
   questionText: "পিটিকিলেই ভাঙে, আফলিয়ালেও নাভাঙে ।",
   answer: "কণী",
   questionImage: "/images/q10.jpg",
